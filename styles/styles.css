@@ -16,7 +16,9 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input {
+input,
+textarea,
+select {
   width: 100%;
   display: block;
   margin-bottom: 1rem;
@@ -47,4 +49,12 @@ button {
 button:hover {
   background-color: rgb(52, 14, 95);
   border-color: rgb(52, 14, 95);
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline input {
+  width: auto;
 }
