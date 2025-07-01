@@ -33,6 +33,3 @@ node_modules/
 # Optional: build or dist directories
 dist/
 build/
-
-# Screenshots (optional, remove if you want to track them)
-# screenshot.png
