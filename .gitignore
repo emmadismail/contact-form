@@ -1,0 +1,38 @@
+
+---
+
+## 2️⃣ **.gitignore**
+
+```gitignore
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux system files
+*~
+
+# Node modules (in case you use JS tools)
+node_modules/
+
+# VSCode settings
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Environment variables (if you use them)
+.env
+
+# Log files
+*.log
+
+# Optional: build or dist directories
+dist/
+build/
+
+# Screenshots (optional, remove if you want to track them)
+# screenshot.png
