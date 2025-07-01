@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <h1>Contact</h1>
+      <h1>Contact Us</h1>
     </header>
     <main>
       <form action="/" method="GET">
@@ -23,15 +23,33 @@
           <ul>
             <li>
               <label for="username">Your Name</label>
-              <input type="text" name="user-name" id="username" />
+              <input
+                type="text"
+                name="user-name"
+                id="username"
+                placeholder="John Doe"
+                required
+              />
             </li>
             <li>
               <label for="useremail">Your Email Address</label>
-              <input type="email" name="user-email" id="useremail" />
+              <input
+                type="email"
+                name="user-email"
+                id="useremail"
+                required
+                placeholder="john.doe@gmail.com"
+              />
             </li>
             <li>
               <label for="userpassword">Your Password</label>
-              <input type="password" name="user-password" id="userpassword" />
+              <input
+                type="password"
+                name="user-password"
+                id="userpassword"
+                required
+                minlength="7"
+              />
             </li>
           </ul>
         </section>
@@ -41,15 +59,31 @@
           <ul>
             <li>
               <label for="userage">Your Age</label>
-              <input type="number" step="1" name="user-age" id="userage" />
+              <input
+                type="number"
+                step="1"
+                name="user-age"
+                id="userage"
+                required
+                min="18"
+                max="100"
+                placeholder="25"
+              />
             </li>
             <li>
               <label for="userdob">Your Date of Birth</label>
-              <input type="date" name="user-dob" id="userdob" />
+              <input
+                type="date"
+                name="user-dob"
+                id="userdob"
+                required
+                min="1921-01-01"
+                max="2003-01-01"
+              />
             </li>
             <li>
               <label for="userfavcolor">What is your favorite color?</label>
-              <select name="user-fav-color" id="userfavcolor">
+              <select name="user-fav-color" id="userfavcolor" required>
                 <option value="Blue">Blue</option>
                 <option value="Black">Black</option>
                 <option value="Red">Red</option>
@@ -60,7 +94,12 @@
 
         <section>
           <label for="usermessage">Your Message</label>
-          <textarea name="user-message" id="usermessage"></textarea>
+          <textarea
+            name="user-message"
+            id="usermessage"
+            rows="4"
+            required
+          ></textarea>
         </section>
 
         <section>
@@ -72,6 +111,7 @@
                 name="verification"
                 id="verify-text-message"
                 value="text-message"
+                required
               />
               <label for="verify-text-message">Via a Text Message (SMS)</label>
             </li>
@@ -81,6 +121,7 @@
                 name="verification"
                 id="verify-phone-call"
                 value="phone-call"
+                required
               />
               <label for="verify-phone-call">Via a Phone Call</label>
             </li>
@@ -90,6 +131,7 @@
                 name="verification"
                 id="verify-email"
                 value="email"
+                required
               />
               <label for="verify-email">Via an Email</label>
             </li>
@@ -104,6 +146,7 @@
                 id="contact-email"
                 name="contact"
                 value="contact-email"
+                required
               />
               <label for="contact-email">Contact me via Email</label>
             </li>
@@ -121,7 +164,7 @@
         <hr />
         <section>
           <div class="form-control-inline">
-            <input type="checkbox" id="agree-terms" name="terms" />
+            <input type="checkbox" id="agree-terms" name="terms" required />
             <label for="agree-terms"
               >Do you agree with our terms & conditions?</label
             >
@@ -129,7 +172,7 @@
         </section>
 
         <section>
-          <button>Submit</button>
+          <button type="submit">Submit</button>
         </section>
       </form>
     </main>
